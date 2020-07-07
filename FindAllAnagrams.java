@@ -23,7 +23,8 @@ public class FindAllAnagrams {
     // we can use 'a' as well but use Math.abs(p.charAt(right) - 'A')
 		while (right < window) {
 			phash[p.charAt(right) - 'A'] += 1;
-			hash[s.charAt(right++) - 'A'] += 1;
+			hash[s.charAt(right) - 'A'] += 1;
+			right++;
 		}
 		right--;
 		while (right < len) {
