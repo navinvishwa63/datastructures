@@ -26,7 +26,7 @@ public class FindAllAnagrams {
 			hash[s.charAt(right) - 'A'] += 1;
 			right++;
 		}
-		right--;
+		right--; // bring right pointer back to window size.
 		while (right < len) {
 			if (Arrays.equals(phash, hash)) {
 				result.add(left);
