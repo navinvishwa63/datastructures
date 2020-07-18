@@ -37,14 +37,13 @@ public class RotateMN90 {
     }
 
     public static int[][] rotateloop(int[][] matix, int rotationNumber) {
-        int[][] result = new int[matix.length][matix[0].length];
         if (rotationNumber % 4 == 0) {
             return matix;
         }
         for (int i = 0; i < rotationNumber; i++) {
-            result = rotateMatrixBy90DegreeClockwise(matix);
+            matix = rotateMatrixBy90DegreeClockwise(matix);
         }
-        return result;
+        return matix;
     }
 
     public static void main(String args[]) {
