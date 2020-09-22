@@ -1,3 +1,7 @@
+/**
+ *  Using Knapsack unbounded because coins are infinitely supplied.
+*/
+
 public class CoinChangeMinWays {
   
       public static int coinChangeMin(int[] coins, int amount, int n) {
