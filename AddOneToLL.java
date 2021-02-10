@@ -21,7 +21,7 @@ public class AddOneToList {
 
 		int res = node.data + addWithCarry(node.next);
 		node.data = res % 10;
-		res /= res;
+		res /= 10;
 		return res;
 	}
 
@@ -52,7 +52,7 @@ public class AddOneToList {
 		System.out.print("Before: ");
 		printList(head);
 		System.out.print("\nAfter: ");
-		printList(addOneToList(head));
+		printList(addOneToList(head)); // 2000
 
 	}
 
